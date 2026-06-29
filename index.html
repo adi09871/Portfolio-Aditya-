@@ -556,6 +556,28 @@
     </div>
   </div>
 
+  <!-- ================= RESUME DOWNLOAD PROMPT MODAL (GEN-Z STYLE) ================= -->
+  <div class="resume-popup-modal" id="resume-download-modal">
+    <div class="resume-modal-backdrop" id="btn-close-resume-backdrop"></div>
+    <div class="resume-modal-box">
+      <div class="resume-modal-close-btn-wrapper">
+        <button class="btn-resume-modal-close" id="btn-close-resume-modal" title="Dismiss">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <div class="resume-modal-icon-badge">📄</div>
+      <h3 class="resume-modal-title">Grab Aditya's Resume! 🚀</h3>
+      <p class="resume-modal-desc">Want to look at the tech stack, internships, and build stats offline? Download the official PDF resume.</p>
+      <div class="resume-modal-actions">
+        <a href="./Aditya_resume.pdf" download="Aditya_resume.pdf" class="btn-resume-download-confirm" id="btn-resume-download-confirm-trigger">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+          <span>Download PDF</span>
+        </a>
+        <button class="btn-resume-download-cancel" id="btn-close-resume-modal-secondary">Maybe Later</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Android toast notification -->
   <div class="system-toast" id="system-toast-alert">
     <span id="toast-text-alert">Alert notification</span>

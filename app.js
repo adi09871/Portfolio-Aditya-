@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupProjectsCarousel();
   setupModalHandlers();
   setupInteractiveWows();
+  setupResumePromptModal();
 });
 
 // ==========================================================================
@@ -299,4 +300,39 @@ function createRipple(event) {
   container.appendChild(ripple);
 
   ripple.addEventListener('animationend', () => { ripple.remove(); });
+}
+
+// ==========================================================================
+// RESUME DOWNLOAD PROMPT POPUP (AUTO POPUP AFTER 3-4 SECONDS)
+// ==========================================================================
+function setupResumePromptModal() {
+  const resumeModal = document.getElementById('resume-download-modal');
+  if (!resumeModal) return;
+
+  const closeTriggers = [
+    document.getElementById('btn-close-resume-modal'),
+    document.getElementById('btn-close-resume-modal-secondary'),
+    document.getElementById('btn-close-resume-backdrop'),
+    document.getElementById('btn-resume-download-confirm-trigger')
+  ];
+
+  const closeModalFunc = () => {
+    resumeModal.classList.remove('open');
+    triggerHapticPulse();
+  };
+
+  closeTriggers.forEach(btn => {
+    if (btn) {
+      btn.addEventListener('click', closeModalFunc);
+    }
+  });
+
+  // Prompt user after 3.5 seconds if not already shown in this session
+  setTimeout(() => {
+    if (!sessionStorage.getItem('resumePromptShown')) {
+      resumeModal.classList.add('open');
+      sessionStorage.setItem('resumePromptShown', 'true');
+      triggerHapticPulse();
+    }
+  }, 3500);
 }
