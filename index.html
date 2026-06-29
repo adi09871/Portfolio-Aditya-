@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya | Android Developer Portfolio</title>
+  <!-- Google Fonts: Outfit & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="dark-mode">
+
+  <!-- Ambient Glow Elements behind cards -->
+  <div class="mesh-glow mesh-1"></div>
+  <div class="mesh-glow mesh-2"></div>
+
+  <!-- MAIN MASTER GRID -->
+  <div class="portfolio-master-grid">
+
+    <!-- ================= FIXED LEFT SIDEBAR ================= -->
+    <aside class="left-sidebar">
+      <div class="sidebar-top">
+        <div class="sidebar-brand">
+          <h2>Aditya<span class="green-dot">.</span></h2>
+          <p>Android Engineer</p>
+        </div>
+
+        <div class="sidebar-socials">
+          <a href="https://github.com/adi09871" target="_blank" title="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.7.37-1.07.66-1.32-2.2-.25-4.5-1.1-4.5-4.88 0-1.08.38-1.96 1.03-2.65-.1-.25-.45-1.25.1-2.62 0 0 .83-.27 2.72 1.02a9.58 9.58 0 0 1 5 0c1.88-1.3 2.71-1.02 2.71-1.02.55 1.37.2 2.37.1 2.62.64.69 1.02 1.57 1.02 2.65 0 3.8-2.3 4.62-4.5 4.88.35.3.66.9.66 1.81V21c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-kumar-7125692a1/" target="_blank" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a href="mailto:adit10022004@gmail.com" title="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+        
+        <nav class="sidebar-nav-menu">
+          <button class="menu-item active" data-target="sec-hero">
+            <span class="menu-bullet"></span>
+            <span>Home</span>
+          </button>
+          <button class="menu-item" data-target="sec-about-container">
+            <span class="menu-bullet"></span>
+            <span>About Me</span>
+          </button>
+          <button class="menu-item" data-target="sec-skills-container">
+            <span class="menu-bullet"></span>
+            <span>Skills</span>
+          </button>
+          <button class="menu-item" data-target="sec-projects-row">
+            <span class="menu-bullet"></span>
+            <span>Projects</span>
+          </button>
+          <button class="menu-item" data-target="sec-experience-container">
+            <span class="menu-bullet"></span>
+            <span>Experience</span>
+          </button>
+          <button class="menu-item" data-target="sec-achievements-container">
+            <span class="menu-bullet"></span>
+            <span>Achievements</span>
+          </button>
+          <button class="menu-item" data-target="sec-contact-container">
+            <span class="menu-bullet"></span>
+            <span>Contact</span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="btn-connect-sidebar" onclick="scrollToSection('sec-contact-container')">Let's Connect</button>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN SCROLL CONTENT AREA ================= -->
+    <main class="main-content-scroll scroll-container" id="main-scroll-panel">
+
+      <!-- SECTION 1: HERO DISPLAY (Laptop mock border style) -->
+      <section class="dashboard-hero-section" id="sec-hero">
+        <div class="laptop-frame-wrapper">
+          <div class="laptop-header">
+            <div class="laptop-header-actions">
+              <span class="circle-btn"></span>
+              <span class="circle-btn"></span>
+            </div>
+          </div>
+
+          <div class="laptop-body-grid">
+            <!-- Left Info Block -->
+            <div class="laptop-info-col">
+              <span class="intro-greet">Hi, I'm</span>
+              <h1 class="intro-name">Aditya Kumar</h1>
+              <h2 class="intro-role">Android Application Developer</h2>
+              <p class="intro-bio">I build production-grade Android apps with modern architecture, real-time backends, and delightful user experiences.</p>
+              
+              <div class="intro-badges-row">
+                <span class="badge-tag"><i class="circle-tag purple"></i>Kotlin</span>
+                <span class="badge-tag"><i class="circle-tag blue"></i>Jetpack Compose</span>
+                <span class="badge-tag"><i class="circle-tag orange"></i>Spring Boot</span>
+                <span class="badge-tag"><i class="circle-tag green"></i>Firebase</span>
+              </div>
+
+              <div class="intro-actions-row">
+                <button class="btn-primary-mockup" onclick="scrollToSection('sec-projects-row')">View My Work</button>
+                <a href="/Aditya_resume.pdf" download="Aditya_resume.pdf" class="btn-secondary-mockup">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                  <span>Download Resume</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Profile & Android Robot Block -->
+            <div class="laptop-profile-col">
+              <!-- Glow frame of profile -->
+              <div class="glowing-avatar-frame">
+                <img src="/profile.jpg" alt="Aditya Kumar Portrait" class="avatar-photo-src">
+              </div>
+
+              <!-- Interactive Waving SVG Android Droid -->
+              <div class="svg-android-droid-wrapper">
+                <svg viewBox="0 0 100 120" width="80" height="100" class="android-robot-svg">
+                  <!-- Antennae -->
+                  <line x1="38" y1="20" x2="28" y2="5" stroke="#3ddc84" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="62" y1="20" x2="72" y2="5" stroke="#3ddc84" stroke-width="4" stroke-linecap="round"/>
+                  <!-- Head -->
+                  <path d="M25 42A25 25 0 0 1 75 42Z" fill="#3ddc84"/>
+                  <!-- Eyes -->
+                  <circle cx="40" cy="30" r="3" fill="#ffffff"/>
+                  <circle cx="60" cy="30" r="3" fill="#ffffff"/>
+                  <!-- Body -->
+                  <path d="M25 46h50v42a6 6 0 0 1-6 6H31a6 6 0 0 1-6-6Z" fill="#3ddc84"/>
+                  <!-- Waving Arm (Left) -->
+                  <g class="android-waving-arm">
+                    <rect x="12" y="46" width="10" height="34" rx="5" fill="#3ddc84" transform="rotate(20 17 46)"/>
+                  </g>
+                  <!-- Right Arm -->
+                  <rect x="78" y="46" width="10" height="34" rx="5" fill="#3ddc84"/>
+                  <!-- Legs -->
+                  <rect x="36" y="95" width="10" height="20" rx="5" fill="#3ddc84"/>
+                  <rect x="54" y="95" width="10" height="20" rx="5" fill="#3ddc84"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Stats strip -->
+          <div class="laptop-footer-stats-strip">
+            <div class="stats-card-node">
+              <h3>3+</h3>
+              <p>Production Apps</p>
+            </div>
+            <div class="stats-card-node">
+              <h3>30%</h3>
+              <p>Community Impact</p>
+            </div>
+            <div class="stats-card-node">
+              <h3>1s</h3>
+              <p>Realtime Sync</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: ABOUT & SKILLS ROW -->
+      <div class="about-skills-row-grid">
+        <!-- About Me Card (Left Column) -->
+        <div class="about-me-glass-card" id="sec-about-container">
+          <div class="card-icon-box-title">
+            <span class="title-circle-avatar">👤</span>
+            <h3>About Me</h3>
+          </div>
+          <p class="about-card-body">Passionate Android developer who loves building real-world apps that solve problems. I focus on clean architecture, performance, and creating amazing user experiences.</p>
+          
+          <div class="about-status-list">
+            <div class="status-node"><span class="dot-green"></span>Android Application Developer</div>
+            <div class="status-node"><span class="dot-green"></span>B.Tech Computer Science student</div>
+            <div class="status-node"><span class="dot-green"></span>Based in New Delhi, India</div>
+          </div>
+
+          <button class="btn-about-connect" onclick="scrollToSection('sec-contact-container')">Contact Aditya</button>
+        </div>
+
+        <!-- Technical Skills Card (Right Column) -->
+        <div class="skills-glass-card-wrapper" id="sec-skills-container">
+          <div class="card-icon-box-title">
+            <span class="title-circle-avatar">🛠️</span>
+            <h3>Technical Skills</h3>
+          </div>
+          
+          <div class="skills-progress-sub-col">
+            <div class="skill-progress-bar-row">
+              <div class="bar-header">
+                <span>Kotlin</span>
+                <span class="val">95%</span>
+              </div>
+              <div class="progress-track"><span class="fill purple" style="width: 95%;"></span></div>
+            </div>
+
+            <div class="skill-progress-bar-row">
+              <div class="bar-header">
+                <span>Jetpack Compose</span>
+                <span class="val">92%</span>
+              </div>
+              <div class="progress-track"><span class="fill purple" style="width: 92%;"></span></div>
+            </div>
+
+            <div class="skill-progress-bar-row">
+              <div class="bar-header">
+                <span>Spring Boot</span>
+                <span class="val">88%</span>
+              </div>
+              <div class="progress-track"><span class="fill purple" style="width: 88%;"></span></div>
+            </div>
+
+            <div class="skill-progress-bar-row">
+              <div class="bar-header">
+                <span>Firebase</span>
+                <span class="val">90%</span>
+              </div>
+              <div class="progress-track"><span class="fill purple" style="width: 90%;"></span></div>
+            </div>
+
+            <div class="skill-progress-bar-row">
+              <div class="bar-header">
+                <span>REST APIs</span>
+                <span class="val">85%</span>
+              </div>
+              <div class="progress-track"><span class="fill purple" style="width: 85%;"></span></div>
+            </div>
+
+            <div class="skill-progress-bar-row">
+              <div class="bar-header">
+                <span>Tools I Use</span>
+                <span class="val">80%</span>
+              </div>
+              <div class="progress-track"><span class="fill purple" style="width: 80%;"></span></div>
+            </div>
+
+            <div class="tools-icons-row-strip">
+              <span class="tool-circle" title="Android OS">🤖</span>
+              <span class="tool-circle" title="IntelliJ IDEA">💻</span>
+              <span class="tool-circle" title="Git Version Control">⚙️</span>
+              <span class="tool-circle" title="GitHub Code hosting">📁</span>
+              <span class="tool-circle" title="Figma UI Designing">🎨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: FEATURED PROJECTS -->
+      <section class="featured-projects-section" id="sec-projects-row">
+        <div class="section-title-wrapper">
+          <h2 class="section-main-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of the applications and products I've built.</p>
+        </div>
+
+        <div class="projects-grid-container">
+          
+          <!-- Project 1: TrackMyBus -->
+          <div class="premium-project-card card-blue">
+            <div class="card-image-wrapper">
+              <div class="css-phone-frame border-blue">
+                <div class="phone-camera-island"></div>
+                <div class="phone-screen-screen screen-trackmybus">
+                  <img src="/trackmybus_screenshot.png" alt="TrackMyBus UI Screen" class="phone-app-screenshot">
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-details-wrapper">
+              <h3 class="proj-title">TrackMyBus</h3>
+              <p class="proj-desc">Real-time bus tracking system with live GPS location synchronization and notifications.</p>
+              <div class="proj-chips-row">
+                <span>Kotlin</span>
+                <span>Compose</span>
+                <span>Spring Boot</span>
+              </div>
+              <div class="card-actions-row">
+                <a href="https://github.com/adi09871" target="_blank" class="btn-project-action btn-git-code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.7.37-1.07.66-1.32-2.2-.25-4.5-1.1-4.5-4.88 0-1.08.38-1.96 1.03-2.65-.1-.25-.45-1.25.1-2.62 0 0 .83-.27 2.72 1.02a9.58 9.58 0 0 1 5 0c1.88-1.3 2.71-1.02 2.71-1.02.55 1.37.2 2.37.1 2.62.64.69 1.02 1.57 1.02 2.65 0 3.8-2.3 4.62-4.5 4.88.35.3.66.9.66 1.81V21c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: ResQ -->
+          <div class="premium-project-card card-red">
+            <div class="card-image-wrapper">
+              <div class="css-phone-frame border-red">
+                <div class="phone-camera-island"></div>
+                <div class="phone-screen-screen screen-resq">
+                  <div class="phone-app-mock-sos">
+                    <div class="sos-glowing-circle">SOS</div>
+                    <div class="sos-details">Police • Doctors • Fire</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-details-wrapper">
+              <h3 class="proj-title">ResQ</h3>
+              <p class="proj-desc">Emergency response app featuring Google ML Kit QR scanning and Firestore data syncing.</p>
+              <div class="proj-chips-row">
+                <span>Kotlin</span>
+                <span>Firebase</span>
+                <span>ML Kit</span>
+              </div>
+              <div class="card-actions-row">
+                <a href="https://github.com/adi09871" target="_blank" class="btn-project-action btn-git-code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.7.37-1.07.66-1.32-2.2-.25-4.5-1.1-4.5-4.88 0-1.08.38-1.96 1.03-2.65-.1-.25-.45-1.25.1-2.62 0 0 .83-.27 2.72 1.02a9.58 9.58 0 0 1 5 0c1.88-1.3 2.71-1.02 2.71-1.02.55 1.37.2 2.37.1 2.62.64.69 1.02 1.57 1.02 2.65 0 3.8-2.3 4.62-4.5 4.88.35.3.66.9.66 1.81V21c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Pregnancy Vitals -->
+          <div class="premium-project-card card-purple">
+            <div class="card-image-wrapper">
+              <div class="css-phone-frame border-purple">
+                <div class="phone-camera-island"></div>
+                <div class="phone-screen-screen screen-pregnancy">
+                  <div class="phone-app-mock-health">
+                    <div class="health-heart-pulsing">❤️</div>
+                    <div class="health-logs-chart">
+                      <span class="bar" style="--h: 50%;"></span>
+                      <span class="bar" style="--h: 75%;"></span>
+                      <span class="bar" style="--h: 60%;"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-details-wrapper">
+              <h3 class="proj-title">Pregnancy Vitals</h3>
+              <p class="proj-desc">Offline-first vitals monitor utilizing Room Database and WorkManager persistent alarms.</p>
+              <div class="proj-chips-row">
+                <span>Compose</span>
+                <span>Room DB</span>
+                <span>WorkManager</span>
+              </div>
+              <div class="card-actions-row">
+                <a href="https://github.com/adi09871" target="_blank" class="btn-project-action btn-git-code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.7.37-1.07.66-1.32-2.2-.25-4.5-1.1-4.5-4.88 0-1.08.38-1.96 1.03-2.65-.1-.25-.45-1.25.1-2.62 0 0 .83-.27 2.72 1.02a9.58 9.58 0 0 1 5 0c1.88-1.3 2.71-1.02 2.71-1.02.55 1.37.2 2.37.1 2.62.64.69 1.02 1.57 1.02 2.65 0 3.8-2.3 4.62-4.5 4.88.35.3.66.9.66 1.81V21c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: PROFESSIONAL EXPERIENCE -->
+      <div class="experience-glass-card-wrapper" id="sec-experience-container">
+        <div class="card-icon-box-title">
+          <span class="title-circle-avatar">💼</span>
+          <h3>Professional Experience</h3>
+        </div>
+        
+        <div class="timeline-sub-col">
+          <div class="v2-timeline-path">
+            <!-- Node 1 -->
+            <div class="timeline-v2-card">
+              <div class="node-dot orange"></div>
+              <span class="job-date">Apr 2026 - May 2026</span>
+              <h4>Android Developer Intern</h4>
+              <span class="company-lbl">Spaak Kai LLP</span>
+              <ul class="job-points-list">
+                <li>Developed Virtual Try-On Android app in Kotlin/Compose.</li>
+                <li>Integrated Supabase database triggers & MVVM.</li>
+              </ul>
+            </div>
+
+            <!-- Node 2 -->
+            <div class="timeline-v2-card">
+              <div class="node-dot orange"></div>
+              <span class="job-date">Sep 2024 - Nov 2024</span>
+              <h4>Community & Outreach Intern</h4>
+              <span class="company-lbl">Hack2skill</span>
+              <ul class="job-points-list">
+                <li>Scaled community outreach engagements by 30%.</li>
+                <li>Collaborated across teams to run national hackathons.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <button class="btn-timeline-full-exp" onclick="scrollToSection('sec-skills-container')">View Full Experience</button>
+        </div>
+      </div>
+
+      <!-- SECTION 6: ACHIEVEMENTS -->
+      <div class="achievements-glass-card-mock" id="sec-achievements-container">
+        <div class="card-icon-box-title">
+          <span class="title-circle-avatar">⭐</span>
+          <div>
+            <h3>Achievements</h3>
+            <span class="box-subtitle">Milestones & Highlights</span>
+          </div>
+        </div>
+
+        <div class="achievements-grid-tiles-4">
+          <!-- Tile 1 -->
+          <div class="achievement-mini-tile tile-green">
+            <div class="tile-icon-circle"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+            <div>
+              <h5>Published on Google Play</h5>
+              <p>Handled full release cycle with closed testing, permissions & policies.</p>
+            </div>
+          </div>
+
+          <!-- Tile 2 -->
+          <div class="achievement-mini-tile tile-purple">
+            <div class="tile-icon-circle">💬</div>
+            <div>
+              <h5>Realtime Applications</h5>
+              <p>Built apps with realtime sync, FCM notifications & live GPS tracking.</p>
+            </div>
+          </div>
+
+          <!-- Tile 3 -->
+          <div class="achievement-mini-tile tile-blue">
+            <div class="tile-icon-circle">💾</div>
+            <div>
+              <h5>Offline First Expertise</h5>
+              <p>Experience building reliable offline apps with Room & WorkManager.</p>
+            </div>
+          </div>
+
+          <!-- Tile 4 -->
+          <div class="achievement-mini-tile tile-orange">
+            <div class="tile-icon-circle">🧱</div>
+            <div>
+              <h5>Clean Architecture Advocate</h5>
+              <p>Strong believer in MVVM, Repository pattern & modular architectures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 7: CONTACT -->
+      <div class="contact-info-glass-card-mock" id="sec-contact-container">
+        <div class="card-icon-box-title">
+          <span class="title-circle-avatar">📬</span>
+          <h3>Get In Touch</h3>
+        </div>
+
+        <div class="contact-details-stack-list">
+          <div class="contact-item-row">
+            <span class="icon">✉️</span>
+            <span class="val">adit10022004@gmail.com</span>
+          </div>
+          <div class="contact-item-row">
+            <span class="icon">📞</span>
+            <span class="val">+91 7065675017</span>
+          </div>
+          <div class="contact-item-row">
+            <span class="icon">🔗</span>
+            <span class="val">linkedin.com/in/aditya-kumar-7125692a1/</span>
+          </div>
+          <div class="contact-item-row">
+            <span class="icon">📁</span>
+            <span class="val">github.com/adi09871</span>
+          </div>
+        </div>
+
+        <!-- SVG Mailbox with flag -->
+        <div class="svg-mailbox-wrapper">
+          <svg viewBox="0 0 100 100" width="70" height="70" class="mailbox-svg">
+            <rect x="47" y="60" width="6" height="30" fill="#757575"/>
+            <path d="M25 35h50v25a6 6 0 0 1-6 6H31a6 6 0 0 1-6-6Z" fill="#1e88e5"/>
+            <path d="M25 35a25 25 0 0 1 50 0Z" fill="#1976d2"/>
+            <rect x="74" y="25" width="4" height="25" fill="#d32f2f" class="mailbox-red-flag"/>
+            <rect x="70" y="22" width="10" height="8" fill="#d32f2f" class="mailbox-red-flag-head"/>
+            <rect x="30" y="32" width="40" height="20" rx="3" fill="#ffffff" stroke="#ccc" class="mailbox-letter-peeking"/>
+            <line x1="35" y1="38" x2="65" y2="38" stroke="#777" stroke-width="1.5"/>
+            <line x1="35" y1="44" x2="55" y2="44" stroke="#777" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- FOOTER BANNER (Rocket Launch Ending) -->
+      <footer class="mockup-footer-banner">
+        <div class="footer-left-quote">
+          <p class="quote-main">I don't just write code, <span class="glow-text">I build experiences.</span></p>
+        </div>
+        
+
+        <!-- Flying SVG Rocket from Clouds -->
+        <div class="footer-right-rocket-graphic" id="footer-rocket-box">
+          <div class="cloud-fluff fluff-1"></div>
+          <div class="cloud-fluff fluff-2"></div>
+          
+          <div class="flying-rocket-model" id="flying-rocket">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+              <path d="M12 2s-6 4.5-6 10c0 3 1.5 5 2.5 6l-1.5 2.5h10L15.5 18c1-1 2.5-3 2.5-6 0-5.5-6-10-6-10zm0 10.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#f44336"/>
+            </svg>
+            <div class="rocket-fire-flame"></div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- ================= MASTER DETAIL MODAL FOR CASE STUDIES ================= -->
+  <div class="v2-fullscreen-modal" id="projects-detail-modal">
+    <div class="modal-backdrop-blur"></div>
+    <div class="modal-window">
+      <div class="modal-top-bar">
+        <div class="modal-app-details">
+          <div class="modal-app-icon" id="modal-app-icon-indicator">T</div>
+          <div>
+            <h3 id="modal-project-title">Project Title</h3>
+            <span id="modal-project-subtitle">Subtitle Info</span>
+          </div>
+        </div>
+        <button class="btn-modal-close" id="btn-modal-close-trigger" title="Close Details">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-scroll-viewport scroll-container">
+        <div class="modal-content-grid">
+          
+          <div class="modal-card-block">
+            <h4>Application Description</h4>
+            <p id="modal-project-desc-txt"></p>
+          </div>
+
+          <div class="modal-card-block accent-red-block">
+            <h4>Technical Challenges Solved</h4>
+            <p id="modal-project-challenge-txt"></p>
+          </div>
+
+          <div class="modal-card-block">
+            <h4>Target Framework Stack</h4>
+            <div class="chips-row" id="modal-project-chips-target">
+              <!-- Tech chips -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer-actions">
+          <a href="#" target="_blank" class="btn-primary-v2" id="modal-project-github-anchor">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.7.37-1.07.66-1.32-2.2-.25-4.5-1.1-4.5-4.88 0-1.08.38-1.96 1.03-2.65-.1-.25-.45-1.25.1-2.62 0 0 .83-.27 2.72 1.02a9.58 9.58 0 0 1 5 0c1.88-1.3 2.71-1.02 2.71-1.02.55 1.37.2 2.37.1 2.62.64.69 1.02 1.57 1.02 2.65 0 3.8-2.3 4.62-4.5 4.88.35.3.66.9.66 1.81V21c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            <span>Explore Repository Code</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Android toast notification -->
+  <div class="system-toast" id="system-toast-alert">
+    <span id="toast-text-alert">Alert notification</span>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
