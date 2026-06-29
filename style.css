@@ -1331,20 +1331,54 @@ body {
 
 .mockup-footer-banner {
   background: var(--bg-darkest);
-  border-top: 1px solid var(--border-light);
-  border-radius: 20px;
-  padding: 24px 32px;
+  border: 1.5px solid var(--border-light);
+  border-radius: 28px;
+  padding: 48px 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-top: 24px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
   position: relative;
+  overflow: hidden;
 }
 
-.footer-left-quote .quote-main {
+.footer-closing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 640px;
+  z-index: 5;
+}
+
+.footer-closing-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.footer-closing-heading {
   font-family: var(--font-title);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-white);
+  letter-spacing: -0.5px;
+}
+
+.footer-closing-divider {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-green), var(--color-blue));
+  border-radius: 2px;
+  margin: 4px 0;
+}
+
+.footer-closing-body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-gray);
+  font-weight: 400;
 }
 
 .footer-center-cta {
@@ -1374,10 +1408,13 @@ body {
 
 /* Cloud fluff & rising rocket graphics */
 .footer-right-rocket-graphic {
-  position: relative;
+  position: absolute;
+  bottom: 24px;
+  right: 28px;
   width: 60px;
   height: 60px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .cloud-fluff {
@@ -1855,8 +1892,15 @@ body {
   }
   .mockup-footer-banner {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     text-align: center;
+    padding: 32px 20px;
+  }
+  .footer-right-rocket-graphic {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 16px;
   }
   .footer-center-cta {
     flex-direction: column;
