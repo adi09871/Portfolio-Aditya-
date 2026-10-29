@@ -21,13 +21,12 @@ export const resumeData = {
   experience: [
     {
       role: "Android Application Developer Intern",
-      company: "Spaak Kai LLP",
-      timeline: "April 2026 - May 2026",
+      company: "Appsuccessor Media Pvt. Ltd.",
+      timeline: "August 2026 – Present",
       points: [
-        "Developed a Virtual Try-On Android application using Kotlin and Jetpack Compose, focusing on modern UI design and a responsive user experience.",
-        "Implemented MVVM (Model-View-ViewModel) architecture and Jetpack Compose state management to build a scalable, maintainable, and modular codebase.",
-        "Integrated Supabase for backend data management, enabling efficient data storage, retrieval, and synchronization through RESTful APIs.",
-        "Followed clean architecture principles and modular development practices to improve code reusability and simplify future feature enhancements (project currently in development phase)."
+        "Enhanced Weltru's Kotlin-based Android app by integrating Health Connect, optimizing app startup, and improving performance through caching and parallel data loading.",
+        "Developed REST APIs using Kotlin, Spring Boot, and Supabase PostgreSQL for workout splits, exercises, sessions, and sets.",
+        "Integrated backend APIs with Jetpack Compose UI, implementing workout state management, synchronized timers, local data persistence, and batch synchronization."
       ]
     },
     {
@@ -42,6 +41,19 @@ export const resumeData = {
     }
   ],
   projects: [
+    {
+      id: "weltru",
+      title: "Weltru",
+      subtitle: "Smart Health Analytics Android App",
+      skills: ["Kotlin", "Jetpack Compose", "Health Connect API", "Spring Boot", "PostgreSQL", "REST APIs"],
+      github: "https://github.com/adi09871",
+      details: [
+        "Designed a 4-table PostgreSQL schema and developed REST APIs for workout splits, exercises, sessions, and sets, implementing CRUD operations with structured database integration.",
+        "Optimized workout execution with local-first state persistence and batch API synchronization, reducing unnecessary network calls during set logging and syncing changes on user save.",
+        "Implemented session recovery, stable exercise state tracking, and synchronized workout/rest timers to prevent duplicate sessions, preserve progress across app restarts, and ensure consistent UI-backend data synchronization."
+      ],
+      challenge: "Integrating Health Connect with offline-first Compose state persistence while handling bi-directional timer synchronization and batch sync without redundant network calls."
+    },
     {
       id: "trackmybus",
       title: "TrackMyBus",

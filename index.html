@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=1.0.3">
+  <link rel="stylesheet" href="./style.css?v=1.0.4">
 </head>
 <body class="dark-mode">
 
@@ -273,7 +273,57 @@
 
         <div class="projects-grid-container">
           
-          <!-- Project 1: TrackMyBus -->
+          <!-- Project 1: Weltru -->
+          <div class="premium-project-card card-green">
+            <div class="card-image-wrapper">
+              <div class="css-phone-frame border-green">
+                <div class="phone-camera-island"></div>
+                <div class="phone-screen-screen screen-weltru">
+                  <div class="phone-app-mock-health">
+                    <div class="health-heart-pulsing">⚡</div>
+                    <div class="health-logs-chart">
+                      <span class="bar" style="--h: 40%; background: var(--color-green); box-shadow: 0 0 8px var(--color-green);"></span>
+                      <span class="bar" style="--h: 85%; background: var(--color-green); box-shadow: 0 0 8px var(--color-green);"></span>
+                      <span class="bar" style="--h: 60%; background: var(--color-green); box-shadow: 0 0 8px var(--color-green);"></span>
+                      <span class="bar" style="--h: 95%; background: var(--color-green); box-shadow: 0 0 8px var(--color-green);"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-details-wrapper">
+              <div class="proj-status-badge">
+                <span class="status-dot"></span>
+                <span>Current Internship Project</span>
+              </div>
+              <h3 class="proj-title">Weltru <span class="published-tag green-tag">Live Project</span></h3>
+              <p class="proj-desc">
+                Smart Health Analytics Android App — Current internship project at Appsuccessor Media Pvt. Ltd.
+              </p>
+              <ul class="job-points-list project-results-list">
+                <li>Designed a 4-table PostgreSQL schema and developed REST APIs for workout splits, exercises, sessions, and sets, implementing CRUD operations with structured database integration.</li>
+                <li>Optimized workout execution with local-first state persistence and batch API synchronization, reducing unnecessary network calls during set logging and syncing changes on user save.</li>
+                <li>Implemented session recovery, stable exercise state tracking, and synchronized workout/rest timers to prevent duplicate sessions, preserve progress across app restarts, and ensure consistent UI-backend data synchronization.</li>
+              </ul>
+              <div class="proj-chips-row">
+                <span>Kotlin</span>
+                <span>Jetpack Compose</span>
+                <span>Health Connect API</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+                <span>REST APIs</span>
+              </div>
+              <div class="card-actions-row">
+                <a href="https://github.com/adi09871" target="_blank" class="btn-project-action btn-git-code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.7.37-1.07.66-1.32-2.2-.25-4.5-1.1-4.5-4.88 0-1.08.38-1.96 1.03-2.65-.1-.25-.45-1.25.1-2.62 0 0 .83-.27 2.72 1.02a9.58 9.58 0 0 1 5 0c1.88-1.3 2.71-1.02 2.71-1.02.55 1.37.2 2.37.1 2.62.64.69 1.02 1.57 1.02 2.65 0 3.8-2.3 4.62-4.5 4.88.35.3.66.9.66 1.81V21c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: TrackMyBus -->
           <div class="premium-project-card card-blue">
             <div class="card-image-wrapper">
               <div class="css-phone-frame border-blue">
@@ -387,15 +437,19 @@
         
         <div class="timeline-sub-col">
           <div class="v2-timeline-path">
-            <!-- Node 1 -->
-            <div class="timeline-v2-card">
+            <!-- Node 1: Current Internship -->
+            <div class="timeline-v2-card current-role-card">
               <div class="node-dot orange"></div>
-              <span class="job-date">Apr 2026 - May 2026</span>
-              <h4>Android Developer Intern</h4>
-              <span class="company-lbl">Spaak Kai LLP</span>
+              <div class="job-meta-header">
+                <span class="job-date">August 2026 – Present</span>
+                <span class="experience-status-badge">Current Internship</span>
+              </div>
+              <h4>Android Application Developer Intern</h4>
+              <span class="company-lbl">Appsuccessor Media Pvt. Ltd.</span>
               <ul class="job-points-list">
-                <li>Developed Virtual Try-On Android app in Kotlin/Compose.</li>
-                <li>Integrated Supabase database triggers & MVVM.</li>
+                <li>Enhanced Weltru's Kotlin-based Android app by integrating Health Connect, optimizing app startup, and improving performance through caching and parallel data loading.</li>
+                <li>Developed REST APIs using Kotlin, Spring Boot, and Supabase PostgreSQL for workout splits, exercises, sessions, and sets.</li>
+                <li>Integrated backend APIs with Jetpack Compose UI, implementing workout state management, synchronized timers, local data persistence, and batch synchronization.</li>
               </ul>
             </div>
 

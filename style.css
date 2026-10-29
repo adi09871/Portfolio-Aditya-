@@ -553,7 +553,7 @@ body {
 
 .projects-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   width: 100%;
 }
@@ -574,6 +574,11 @@ body {
 .premium-project-card:hover {
   transform: translateY(-6px);
   background: rgba(255, 255, 255, 0.04);
+}
+
+.premium-project-card.card-green:hover {
+  border-color: rgba(61, 220, 132, 0.3);
+  box-shadow: 0 15px 35px rgba(61, 220, 132, 0.08);
 }
 
 .premium-project-card.card-blue:hover {
@@ -724,6 +729,36 @@ body {
   margin-left: 8px;
   font-weight: 700;
   vertical-align: middle;
+}
+
+.published-tag.green-tag {
+  background: rgba(61, 220, 132, 0.08);
+  border-color: rgba(61, 220, 132, 0.25);
+  color: var(--color-green);
+}
+
+.project-results-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2px 0 4px 0;
+}
+
+.project-results-list li {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-gray);
+  position: relative;
+  padding-left: 14px;
+}
+
+.project-results-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-green);
+  font-weight: bold;
 }
 
 /* Play store avail note under description */
@@ -892,6 +927,7 @@ body {
 .border-blue::before { border-color: var(--color-blue); }
 .border-red::before { border-color: var(--color-red); }
 .border-purple::before { border-color: var(--color-purple); }
+.border-green::before { border-color: var(--color-green); }
 
 .phone-camera-island {
   position: absolute;
@@ -925,6 +961,7 @@ body {
 .screen-trackmybus { background: radial-gradient(circle, #263238 0%, #10171a 100%); }
 .screen-resq { background: radial-gradient(circle, #3e1b1b 0%, #150909 100%); }
 .screen-pregnancy { background: radial-gradient(circle, #2e1c3e 0%, #12091a 100%); }
+.screen-weltru { background: radial-gradient(circle, #132e1f 0%, #08140c 100%); }
 
 /* Screen mock displays graphics */
 .phone-app-mock-map {
@@ -1087,6 +1124,40 @@ body {
   position: relative;
   border-left: 3px solid var(--color-orange);
   padding-left: 18px;
+}
+
+.timeline-v2-card.current-role-card {
+  border-left-color: var(--color-green);
+}
+
+.timeline-v2-card.current-role-card .company-lbl {
+  color: var(--color-green);
+}
+
+.timeline-v2-card.current-role-card .job-points-list li::before {
+  color: var(--color-green);
+}
+
+.job-meta-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.experience-status-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(61, 220, 132, 0.1);
+  border: 1px solid rgba(61, 220, 132, 0.25);
+  color: var(--color-green);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
 }
 
 .node-dot {
@@ -1791,6 +1862,11 @@ body {
   font-family: var(--font-title);
   font-size: 18px;
   font-weight: 800;
+}
+
+.modal-app-icon.icon-weltru {
+  background: var(--color-green);
+  color: var(--bg-darkest);
 }
 
 .modal-app-details h3 {

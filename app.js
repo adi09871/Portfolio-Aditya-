@@ -181,6 +181,7 @@ function openProjectCaseStudy(proj) {
   let shortName = proj.title.charAt(0);
   if (proj.id === 'pregnancytracker') iconClass = 'modal-app-icon icon-pregnancy';
   if (proj.id === 'resq') iconClass = 'modal-app-icon icon-resq';
+  if (proj.id === 'weltru') iconClass = 'modal-app-icon icon-weltru';
   
   dom.modalAppIcon.className = iconClass;
   dom.modalAppIcon.textContent = shortName;
